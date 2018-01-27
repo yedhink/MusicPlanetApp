@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:id="@+id/rel_view"
+    android:background="#000000"
+    tools:context="com.example.admin.musicplanetapp.MainActivity">
+
+    <ImageView
+        android:id="@+id/imgV_bgtop"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bgnew" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="98dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo"
+        android:elevation="8dp"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/imgV_bgtop"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_marginTop="21dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:paddingLeft="120dp"
+        android:background="#000000"
+        android:textColor="#0b43a0"
+        android:text="MusicPlanet"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignStart="@id/imgV_bgtop"
+        android:layout_marginBottom="16dp"
+        android:paddingLeft="120dp"
+        android:paddingRight="16dp"
+        android:textSize="16sp"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:layout_toEndOf="@+id/imageView"
+        android:text="We Fill Your Soul With Music" />
+
+    <TextView
+        android:id="@+id/txv_abt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:layout_below="@id/imageView"
+        android:textSize="16sp"
+        android:layout_marginLeft="16dp"
+        android:elevation="8dp"
+        android:background="@drawable/border_shadow"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txv_abt"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:elevation="8dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/border_shadow"
+        android:text="MusicPlanet is a leading record store in Kerala which has a vintage collection of music records available in form of CDs and Vinyls. Our outlet is the one and only store in Kerala which provides a home delivery service of records." />
+
+    <include
+        android:id="@+id/contactxml"
+        layout="@layout/contact"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/txv_content"
+        android:layout_alignParentRight="true"/>
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="250dp"
+        android:src="@drawable/record_store"
+        android:layout_below="@id/txv_content"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="16dp"
+        android:paddingRight="16dp"/>
+
+</RelativeLayout>
+
+

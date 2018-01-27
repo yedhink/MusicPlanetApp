@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#04388c">
+
+    <TextView
+        android:id="@+id/txv_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textSize="16sp"
+        android:text="Contact Us"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"/>
+    <ImageView
+        android:id="@+id/imgv_map"
+        android:layout_width="34dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_location_white_24dp"
+        android:layout_below="@id/txv_contact"
+        android:paddingLeft="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="12sp"
+        android:paddingLeft="16dp"
+        android:paddingTop="10dp"
+        android:layout_below="@id/txv_contact"
+        android:layout_toEndOf="@id/imgv_map"
+        android:text="Music Planet, Edappally, Ernakulam, Kerala, India"/>
+
+    <ImageView
+        android:id="@+id/imgv_email"
+        android:layout_width="34dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_mail_white_24dp"
+        android:layout_below="@id/imgv_map"
+        android:paddingLeft="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="12sp"
+        android:paddingLeft="16dp"
+        android:paddingTop="10dp"
+        android:layout_below="@id/imgv_map"
+        android:layout_toEndOf="@id/imgv_email"
+        android:text="MusicPlanetKerala@gmail.com"/>
+
+    <ImageView
+        android:id="@+id/imgv_tele"
+        android:layout_width="34dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_phone_white_24dp"
+        android:layout_below="@id/imgv_email"
+        android:paddingLeft="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="12sp"
+        android:paddingLeft="16dp"
+        android:paddingTop="10dp"
+        android:layout_below="@id/imgv_email"
+        android:layout_toEndOf="@id/imgv_tele"
+        android:text="0484 2783391(tel)"/>
+
+    <ImageView
+        android:id="@+id/imgv_web"
+        android:layout_width="34dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_link_white_24dp"
+        android:layout_below="@id/imgv_tele"
+        android:paddingLeft="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="12sp"
+        android:paddingLeft="16dp"
+        android:paddingTop="10dp"
+        android:layout_below="@id/imgv_tele"
+        android:layout_toEndOf="@id/imgv_web"
+        android:text="www.MusicPlanetKerala.com"/>
+
+    <ImageButton
+        android:id="@+id/bt_twitter"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/twittericon"
+        android:layout_below="@id/imgv_web"
+        />
+
+    <ImageButton
+        android:id="@+id/bt_fb"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/ic_facebook"
+        android:layout_below="@id/imgv_web"
+        android:layout_toEndOf="@id/bt_twitter"/>
+
+    <ImageButton
+        android:id="@+id/bt_linked"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/linkedin"
+        android:layout_below="@id/imgv_web"
+        android:layout_toEndOf="@id/bt_fb"/>
+</RelativeLayout>
